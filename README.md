@@ -573,3 +573,6 @@ alias mascii='java -jar /YOUR/ACTUAL/PATH/mascii-quickstart/bin/mascii-*.jar'
 
 This generates a midi file in your current directory which you can then open with MuseScore to see the score and export it to other formats, eg MusicXML, mp3, pdf, etc. (MuseScore is an excellent free music editing program which you can download from their website at https://musescore.org)
 
+
+# For Developers
+The source code for Mascii is [here](https://github.com/arikast/mascii-source)

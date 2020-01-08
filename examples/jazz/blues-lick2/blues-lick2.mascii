@@ -1,0 +1,13 @@
+ { 
+    tempo:      90  
+    time:       4/4
+    key:        0
+    -- piano
+    patch:      103     
+} 
+---------------------------------------------
+%   g   [e@ e]g Fa  E@g [g  E   G]  [g# a]  c
+C       [%      e_] [_e E]          [%      !f]
+
+Af  C   Ge@ [Fd]__  Fd  [G  a]  c 
+F   f   F   !g  G   g__         G 

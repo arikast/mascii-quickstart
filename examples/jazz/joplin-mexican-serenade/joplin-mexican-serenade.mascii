@@ -1,0 +1,37 @@
+{
+    time: 2/4
+    key: c
+    tempo: 60
+}
+
+-------- intro
+!c. d   [e  D#] e   | g.  a   G   [a  b]
+c.  d   [e  D#] e   | g.  a   G   [a  b] 
+
+c.  D#  [e  G#] a   | a   G__     c
+c.  D#  [e  G#] a   | F   E__     [E  E@]   
+
+-------- section A
+B     B@    A     G_    _G    g#    a     b     
+D.                      g     (bf)  D           
+
+b     df    C#g   D_f_  _*    C#g   Df    B
+G.                      g     (bf)  D#    
+
+c     B     A     G_    _G    g#    a     b     
+e.                      g     (ce)  g           
+
+c     eg    D#a   E_g_  _*    D#a   Eg    C#
+C.                      g     (ce)  E     
+
+d     f     a     F_d_  _*    F     E     D_    
+f.                      a     (df)  a           
+
+[_D   !C_d_a@_] [_*   B_d_g_] _*       d
+F                F            [D    e] f     
+
+C     e     g     E_c_  _*    E     D     C_    
+E.                      g     (ce)  g           
+
+[_C   !C_f#_] [_*   C_e_g_]   _*     c
+D#            e               [C d=] [e E@]  

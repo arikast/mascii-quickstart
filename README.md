@@ -7,7 +7,7 @@ Mascii is great for emailing, embedding in web pages, or using in a wiki page, a
 
 ## Mascii 2 Examples
 
-Here's how it works.
+See [mascii.org](http://mascii.org) for full examples of Mascii 2 in action.  Then see below to learn how you can use it.
 
 
 ## Pitch

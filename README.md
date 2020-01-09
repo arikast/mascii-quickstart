@@ -203,6 +203,8 @@ Here are four chords, each a quarter note in length:
 cegc !Aegc !!Dafc !Gdfb
 ```
 
+You may be wondering how chords affect the pitch basis for calculating up/down movement, and the answer is that simultaneous notes are read from left to right, just as if they had been sequential.  So for example when you write `ace`, the `a` is relative to its prior note, the `c` is relative to the `a`, and the `e` is relative to the `c`.   
+
 Here is a more complex polyphonic passage consisting of three paired groups.  Because each group within the pair touches its neighboring group with no spaces in between, the two groups are played simultaneously for a 3-on-2 effect (this example is from a Mozart piano sonata, K 332):
 ```
 [c e g][d# e] [!C e g][d# e] [!C e g][d# e]
@@ -239,9 +241,7 @@ g   F   E   D
 
 Here we have 5 bars of polyphonic music, containing a melody line on top and a bass line just beneath it.  Notice how we may use either the | character or a double carriage return to separate measures.  Here we've used a mixture of both.
 
-You may be wondering how chords affect the pitch basis for calculating up/down movement, and the answer is that simultaneous notes are read from left to right, just as if they had been sequential.  So for example when you write `ace`, the a is relative to its prior note, the c is relative to the a, and the e is relative to the c.   
-
-Also note that each part keeps track of its own pitch basis, so for example nothing you do in your bass line will have any effect on your soprano line.
+Notice that each part keeps track of its own pitch basis, so for example nothing you do in your bass line will have any effect on your soprano line.
 
 ### [] vs ()
 Parentheses () create groups just like brackets [] but parentheses also serve an additional purpose: to isolate any pitch basis changes from the rest of the piece.  So this:

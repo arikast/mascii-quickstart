@@ -203,9 +203,11 @@ Here are four chords, each a quarter note in length:
 cegc !Aegc !!Dafc !Gdfb
 ```
 
-You may be wondering how chords affect the pitch basis for calculating up/down movement, and the answer is that simultaneous notes are read from left to right, just as if they had been sequential.  So for example when you write `ace`, the `a` is relative to its prior note, the `c` is relative to the `a`, and the `e` is relative to the `c`.   
+You may be wondering how chords affect the pitch basis for calculating up/down movement, and the answer is that simultaneous notes are read from left to right, just as if they had been sequential.  So in the above example, the initial `c` defaulted to the starting octave range, then the `e` was relative the the prior `c`, then `g` was relative to `e`, and the last tone in the chord, `c`, was relative to the `g`, making it an octave higher than the initial `c` was.  Then the `A` in the subsequent chord is relative the the last `c` of the prior, hence we need a capital `A` with exclamation to get back to our desired octave range.
 
-Here is a more complex polyphonic passage consisting of three paired groups.  Because each group within the pair touches its neighboring group with no spaces in between, the two groups are played simultaneously for a 3-on-2 effect (this example is from a Mozart piano sonata, K 332):
+(Note that an alternative way to handle pitch basis shifts is to insulate them with parentheses, as discussed later in this document.)
+
+Next, here is a more complex polyphonic passage consisting of three paired groups.  Because each group within the pair touches its neighboring group with no spaces in between, the two groups are played simultaneously for a 3-on-2 effect (this example is from a Mozart piano sonata, K 332):
 ```
 [c e g][d# e] [!C e g][d# e] [!C e g][d# e]
 ```
@@ -220,7 +222,6 @@ While the above is suitable for short bursts of polyphony, generally it is easie
 !d# e   D#  e  D#  e
 c e g   C e g  C e g  
 ```
-
 
 As you can see, simultaneous measures are stacked vertically on top of each other.  Thus each part or "instrument" has its own row.  In this case the left hand bass line is in the bottom row, while the melody is in the top.
 

@@ -239,19 +239,28 @@ g   F   E   D
 
 Here we have 5 bars of polyphonic music, containing a melody line on top and a bass line just beneath it.  Notice how we may use either the | character or a double carriage return to separate measures.  Here we've used a mixture of both.
 
+You may be wondering how chords affect the pitch basis for calculating up/down movement, and the answer is that simultaneous notes are read from left to right, just as if they had been sequential.  So for example when you write `ace`, the a is relative to its prior note, the c is relative to the a, and the e is relative to the c.   
+
+Also note that each part keeps track of its own pitch basis, so for example nothing you do in your bass line will have any effect on your soprano line.
+
 ### [] vs ()
 Parentheses () create groups just like brackets [] but parentheses also serve an additional purpose: to isolate any pitch basis changes from the rest of the piece.  So this:
 
-can also be written like this:
+```
+g | [a b c d] | [B c d e] | C
+```
+
+could also be written like this:
+
+```
+g | (a b c d) | (b c d e) | c
+```
 
 It works because while the pitch basis changed with every note inside the parentheses, once the parentheses exited the original pitch basis was restored.
 
-Here the D is capitalized because it is being calculated from the note physically written to its immediate left, the g.  However, sometimes it is simpler to isolate your pitch changes so they do not affect the basis for pitch calculation of surrounding notes.  To achieve this, we can use parentheses instead of brackets: 
-(c e g)(d# e) (c e g)(d# e) (c e g](d# e)
+So originally, the `B` was capitalized because it was being calculated from the note physically written to its immediate left, the `d`.  But in the second version, the parentheses isolated the pitch basis changes `(a b c d)`, so that the b is now calculated from the same `g` basis that the first `a` was calculated from.  
 
-Parentheses work identically to brackets, except that any pitch changes which occur are not carried outside the parentheses as a basis for relative pitch calculation for subsequent notes.  So in this case, the c's and D#'s are each calculated relative to whatever note occured just before the start of this phrase.  Subsequent notes within the parenthetical group still calculate their relative pitches in normal fashion, but once the group is exited, the original pitch is retrieved and used as a basis again going forward. That is why here we could write a lowercase d#, because it was not affected by the preceding g which was contained within its own parenthetical group.
-
-Here is another rendition of Oh Susanna, this time with some filled out chords for the bass.  This time we also only used double carriage returns to separate measures, and did not make use of the | character:
+Here is another rendition of Oh Susanna, this time with some filled out chords for the bass, which we'll isolate from their surrounding context with parentheses:
 
 ```
  %   %   %   [c  d]     | e     g     g.      a
@@ -266,7 +275,7 @@ Here is another rendition of Oh Susanna, this time with some filled out chords f
  g     F     E     D
 ```
 
-Notice how we've used parentheses in the bass line to isolate the pitch shift basis changes from the surrounding piece.  That way we don't have to write subsequent ! marks to jump back to the desired octave range.
+Notice how we've used parentheses for the chords to insulate the surrounding bass line from the chordal pitch shift basis changes.  That way we don't have to write subsequent ! marks to jump back to the desired octave range for subsequent notes.
 
 ## Lyrics
 Let's add lyrics to Oh Susanna:

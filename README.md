@@ -3,7 +3,8 @@ Welcome to the _Musical Ascii_ ("Mascii") polyphonic notation system, the fastes
 
 Once notated in Mascii, a piece can then be converted to a variety of formats including standard printed sheet music, playable sound files, and many other widely used formats. 
 
-Mascii is great for emailing, embedding in web pages, or using in a wiki page, among other uses.
+Mascii is great for emailing, embedding in web pages, or using in a wiki page, among other uses, making it ideal for sketching, jotting down, and sharing musical ideas from any computer keyboard.  Mascii prioritizes the full and easy expression of the essence of Western polyphonic music with a terse, minimalist syntax, making it particularly efficient for jotting down musical thoughts regardless of harmonic and rhythmic complexity. 
+
 
 ## Mascii 2 Examples
 
@@ -545,14 +546,29 @@ Sure you can, put this at the top of your file:
 { time: 3/4 }
 ```
 
-### How does Mascii differ from other textual music notation systems like ABC or Lillypond?
+### How does Mascii differ from other textual music notation systems like ABC, MusicXml, or Lilypond?
 Each system has its strengths based on what its makers have prioritized; so picking the right one depends on your needs.  
 
-Lillypond excels in producing highly polished sheet music, at the cost of some complexity and verbosity.  
+Lilypond excels in producing highly polished sheet music, at the cost of some complexity and verbosity.  
 
 ABC seems geared towards folk music, boasting a large vocabulary of specialized terms applicable to regional styles of folk music.  Richly polyphonic music can be complex to express in ABC.
 
-Mascii prioritizes full and easy expression of the essence of Western polyphonic music from any genre with a terse, minimalist syntax. It aims to be the most efficient way to write regardless of harmonic and rhythmic complexity, making it ideal for sketching and jotting down and impromptu sharing of musical ideas from any computer keyboard. But Mascii does not have expression markings, for example, nor does it offer much control over enharmonic spellings, so it is not as well suited as Lillypond or MuseScore would be for producing final engravings for publication.  Rather it is intended to adequately to express musical ideas, sans markings, so that a competent musician could read, hear, and understand your musical intent, especially once translated to ordinary sheet music. 
+MusicXml is hardly intended to be human readable or writable; rather its sweet spot is as a universal format for interchange between music software programs.
+
+Other text-based notation systems include Guido, Philip's Music Writer, and MusiXTeX, as well as more programatic systems like Music21, Vexflow, and others.  And why limit ourselves to text input?  There's also the marvelous and free MuseScore graphical music software, as well as other paid options like Finale and Sibelius.  And many more.
+
+But for me, several traits make Mascii the most efficient and convenient choice when jotting down musical ideas, mostly revolving around Mascii's relative nature, versus other programs' forced absolutism:
+
+1. **Relative pitches, not absolute** - When I think of a tune, whether original or someone else's, I think in terms of a series of pitches where each pitch is relative to the prior pitch.  I do not think in any particular octave range; rather I think of the contours of the melodic line, in a sort of abstract "any octave" kind of range.  Mascii lets me write it exactly that way, never having to specify an octave range at all.  But every other notation system immediately forces me to specify one, not just once, but often repeatedly with every note or at least when crossing outside a fixed octave boundary (eg from b to c).  That's because other systems use absolute values, whereas Mascii has a "memory" (aka it is *context sensitive*), allowing it to understand what I wanted in a context-sensitive way, without my having to explicitly and redundantly specify it with each note.  Have you noticed how clean and free of markings Mascii is?  You generally write just the pitch and nothing else, yet still retain all the expressive power of more verbose systems.
+2. **Relative rhythms, not absolute** - Similarly, when I think of a rhythm, it is really a set of ratios relative to each other.  I do not much care whether it is a quarter note in 4/4 time or an eighth note in 2/4 time; these are effectively the same thing.  Yet every other notation system, including even standard sheet music itself, immediately forces you into absolute rhythmic values, which does not match how I think. It is a cognitive burden that interferes with my ideation. 
+3. **No petty arithmetic** - I often know that I want a particular ornamental run or flourish to fit within a particular rhythmic unit so that a critical following note strikes at a particular point in the beat.  I do not particularly know or care whether these notes in the flourish will need to be 16ths, 32nds, some Chopin-esque 7ths or another fraction in order to fit within that space; it is a distraction and nuissance to have to calculate this.  Yet every other system, including sheet music itself, forces you into this world of pencil-pushing arithmetic with every note.  Mascii does not.  Put as many notes as you need in the desired rhythmic space, and Mascii will do all the math for you so that it fits perfectly, every beat, in every bar.  Everything adds up perfectly and automatically.
+4. **Ubiquity** - This goes for all text-based systems, but I just love that anywhere I can type, I can write music, whether on my phone or on a computer, in an email, a text, or just plain pen and paper.  No fancy software required, Mascii is really a standard, independent of any software.  (Indeed, I've used it for years, long before creating this software.)  Of course, when it is time to produce a finished score for publication, then I would surely reach for a richer toolset like MuseScore, but during the ideation stage, Mascii is my axe of choice to capture the musical essence of an idea, sans expression markings and other non-essentials, so that any competent musician could read, hear, and understand my musical intent from the resulting Mascii-generated sheet music.  It's all I need and nothing more.
+
+### What enhancements are planned for future releases?
+1. formal recognition of chord symbols.  Currently you could add them to lyrics or put them in a comment, but they are not recognized as anything special, so will not be placed correctly in sheet music for example
+2. trill and ornament markings
+3. song titles
+4. a website where Mascii can be instantly converted to sheet music and sound files online for easy sharing
 
 #### How were the sheet music and mp3s in this readme created?
 All of the sheet music and mp3 files in this readme were generated via the following process:

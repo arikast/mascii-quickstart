@@ -570,7 +570,7 @@ But for me, several traits make Mascii the most efficient and convenient choice 
 3. song titles
 4. a website where Mascii can be instantly converted to sheet music and sound files online for easy sharing
 
-#### How were the sheet music and mp3s in this readme created?
+### How were the sheet music and mp3s in this readme created?
 All of the sheet music and mp3 files in this readme were generated via the following process:
 1. write the musical excerpt in Mascii
 2. use the software contained in this project to convert the Mascii notation into a midi file.

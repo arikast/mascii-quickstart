@@ -537,7 +537,7 @@ Yes, placing the dot *before* instead of after the note or group reverses its di
 
 `.g e`
 
-The above yields a `g` followed by `e` where the duration of the `e` is 3 times as long as the duration of the `g`
+The above yields a `g` followed by `e` where the duration of the `e` is 3 times as long as the duration of the `g`.
 This technique, or even a double-dotted reverse like `..g e` can be used to reasonably approximate a grace note.
 
 

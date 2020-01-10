@@ -75,7 +75,7 @@ Similarly, the final measure had only one element (the note `d`), so the entire 
 
 The first measure however had something interesting: the pair of brackets `[` and `]`.  These brackets form a "group", which is treated as a single element in the measure.  
 
-Thus the first measure actually has four elements: three rests denoted by `%` followed by one group consisting of `[c d]`. So the rests became quarter-note rests, while the group likewise has a total duration of one quarter note.  
+Thus the first measure actually has four elements: three rests denoted by `%` followed by one group consisting of `[c d]`. So dividing equally among the four elements, the rests became quarter-note rests, while the group likewise has a total duration of one quarter note.  
 
 But the group itself contains of two elements within it: the notes `c` and `d`. A group's time, just like a measure's time, gets divided evenly among its elements.  
 

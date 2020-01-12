@@ -25,7 +25,7 @@ G  E  C.    d  | e  e  D  C
 d
 ```
 
-The song above contains five measures, each on its own line, and starts its first measure with three rests indicated by `%` signs.  Then the first note is a `c`, followed by a `d`.  
+The song above contains five measures (two on the first line, two on the second line, and one on the third line), and starts its first measure with three rests indicated by `%` signs.  Then the first note is a `c`, followed by a `d`.  
 
 But how did we express that we wanted to move *up* the scale one step to the d directly above, not *down* 6 steps to the `d` that is below `c`?
 That is controlled by capitalization.  Each note has a relationship to its prior note: starting from the prior note, a small (lowercase) letter *rises upward* to the first matching tone, while a big (capital) letters *sinks downard* to the first matching tone. The magnitude of this movement can also be amplified by preceding the note with exclamation marks.  

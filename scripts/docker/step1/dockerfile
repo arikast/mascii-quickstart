@@ -1,0 +1,10 @@
+FROM ubuntu
+
+RUN apt-get update && \
+    apt-get install -y software-properties-common && \
+    apt-get update && \
+    add-apt-repository ppa:mscore-ubuntu/mscore3-stable && \
+    apt install -y musescore3
+
+ENTRYPOINT ["mscore3"]
+    CMD ["-v"]

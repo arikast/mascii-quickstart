@@ -1,6 +1,0 @@
-FROM mscore3
-
-ENV QT_QPA_PLATFORM offscreen
-
-ENTRYPOINT ["mscore3"]
-    CMD ["-v"]

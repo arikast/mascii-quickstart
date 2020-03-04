@@ -5,3 +5,4 @@ mascii-generated
 *.mp3
 *.png
 *.svg
+.DS_Store

@@ -27,7 +27,7 @@ function mascii2other() {
     input=${fname%.*}.mid
     output=${fname%.*}.$ext
 
-    mascii2midi $1 && docker run --rm -it -v $hostpardir:$wrkdir mscore-3 -o $wrkdir/$output -a jack $wrkdir/$input
+    mascii2midi $f && docker run --rm -it -v $hostpardir:$wrkdir mscore-3 -o $wrkdir/$output -a jack $wrkdir/$input
 }
 
 
@@ -42,4 +42,20 @@ function mascii2pdf() {
 }
 function mascii2mp3() {
     mascii2other $1 mp3
+}
+function mascii2mp3.timidity() {
+    local f=$1
+    if [ -z "$f" ]; then
+        echo "please specify a mascii file to convert"
+        return
+    fi
+
+    local hostpardir=$(cd "$(dirname $f)"; pwd)
+    local fname=$(basename $f)
+    local wrkdir=/wrk-dir
+
+    input=${fname%.*}.mid
+    output=${fname%.*}.mp3
+
+    mascii2midi $f && docker run --rm -it -v $hostpardir:$wrkdir timidity $wrkdir/$input $wrkdir/$output
 }

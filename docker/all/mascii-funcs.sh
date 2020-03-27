@@ -34,3 +34,12 @@ function mascii2other() {
 function mascii2png() {
     mascii2other $1 png
 }
+function mascii2xml() {
+    mascii2other $1 xml
+}
+function mascii2pdf() {
+    mascii2other $1 pdf
+}
+function mascii2mp3() {
+    mascii2other $1 mp3
+}

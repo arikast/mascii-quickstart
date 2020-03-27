@@ -27,7 +27,7 @@ function mascii2other() {
     input=${fname%.*}.mid
     output=${fname%.*}.$ext
 
-    mascii2midi $1 && docker run --rm -it -v $hostpardir:$wrkdir mscore-3 -o $wrkdir/$output $wrkdir/$input
+    mascii2midi $1 && docker run --rm -it -v $hostpardir:$wrkdir mscore-3 -o $wrkdir/$output -a jack $wrkdir/$input
 }
 
 

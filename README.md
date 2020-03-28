@@ -583,14 +583,22 @@ All of the sheet music and mp3 files on [mascii.org](http://mascii.org) were gen
 This project currently supports direct conversion of plain Mascii 2 text notation into midi, a universal sound notation language for computers.  This midi file can then be imported into many other programs, such as the free and excellent MuseScore, to be viewed and printed as traditional sheet music, or output into other formats like mp3 for listening or MusicXml for import into other programs.  In future, this project or a companion website may support direct conversion from Mascii into pdf, mp3, or MusicXml, but currently only midi output is directly supported.
 
 
-# How to install Mascii 2
+# How to install and run Mascii 2 
+
+## The Docker way
+If you have Docker installed, the quickest/easiest way to install and run Mascii is to follow the Docker instructions in docker/README.md 
+
+Otherwise, read on for native installation/running
+
+## The non-Docker Native installation
+These instructions are if you don't use Docker.  Otherwise you may prefer to install and use Docker for a faster/easier installation experience
 
 1. download the jar from this repo, or simply clone this entire repo
 2. setup an alias in your .bashrc or .bash_profile like this, substituting /YOUR/ACTUAL/PATH with your actual path to the jar:
 alias mascii='java -jar /YOUR/ACTUAL/PATH/mascii-quickstart/bin/mascii-*.jar'
 3. restart your command line shell for your alias to take effect
 
-# How to run Mascii 2
+## How to run Mascii 2 (the non-Docker way)
 1. make sure Mascii is installed as described above.
 2. make sure you have java 1.8+ installed on your system
 3. write your mascii piece in a text file (in this example we'll call it "your-text-file.mascii"), then use mascii like this to generate a midi file (.mid):

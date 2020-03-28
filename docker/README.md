@@ -9,6 +9,14 @@
 
 
 You should now have these commands at your disposal in your shell:
+```
+    mascii2midi          
+    mascii2mp3           
+    mascii2mp3.timidity  
+    mascii2pdf           
+    mascii2png           
+    mascii2xml 
+```
 
 
 There is a sample mascii file in the "all" directory you can use to try it out:

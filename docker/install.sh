@@ -5,4 +5,6 @@ set -euo pipefail
 ( cd musescore && ./build.sh)
 ( cd timidity && ./build.sh)
 
-echo "source $PWD/all/mascii-funcs.sh" >> $HOME/.bash_profile
+
+#ensure idempotency
+grep mascii-funcs.sh $HOME/.bash_profile > /dev/null || echo -e "\nsource $PWD/all/mascii-funcs.sh" >> $HOME/.bash_profile

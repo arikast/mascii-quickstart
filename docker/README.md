@@ -1,4 +1,6 @@
-### To install and run both Mascii and Musescore from Docker, allowing end-to-end conversion from Mascii to target formats, follow these steps:
+## To install and run both Mascii and Musescore from Docker
+
+These steps install commands for end-to-end conversion from Mascii to target formats
 
 1. from this directory:
 ```

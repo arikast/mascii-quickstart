@@ -2,12 +2,14 @@
 
 These steps allow end-to-end conversion from Mascii to target formats
 
-1. from this directory:
+1. ensure that you have Docker installed and running
+
+2. from this directory:
 ```
     ./install.sh
 ```
 
-2. restart your shell
+3. restart your shell
 
 
 You should now have these commands at your disposal in your shell:

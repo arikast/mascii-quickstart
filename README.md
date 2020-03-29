@@ -585,12 +585,12 @@ This project currently supports direct conversion of plain Mascii 2 text notatio
 
 # How to install and run Mascii 2 
 
-## The Docker way
-If you have Docker installed, the quickest/easiest way to install and run Mascii is to follow the Docker instructions in docker/README.md 
+## Easy way: Use Docker 
+If you have Docker installed, the quickest/easiest way to install and run Mascii with MuseScore end-to-end is to follow the Docker instructions in [docker/README.md](docker/README.md) 
 
 Otherwise, read on for native installation/running
 
-## The non-Docker Native installation
+## Harder way: Non-Docker Native installation
 These instructions are if you don't use Docker.  Otherwise you may prefer to install and use Docker for a faster/easier installation experience
 
 1. download the jar from this repo, or simply clone this entire repo
@@ -598,7 +598,7 @@ These instructions are if you don't use Docker.  Otherwise you may prefer to ins
 alias mascii='java -jar /YOUR/ACTUAL/PATH/mascii-quickstart/bin/mascii-*.jar'
 3. restart your command line shell for your alias to take effect
 
-## How to run Mascii 2 (the non-Docker way)
+#### Running Mascii (the non-Docker way)
 1. make sure Mascii is installed as described above.
 2. make sure you have java 1.8+ installed on your system
 3. write your mascii piece in a text file (in this example we'll call it "your-text-file.mascii"), then use mascii like this to generate a midi file (.mid):

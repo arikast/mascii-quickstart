@@ -1,14 +1,18 @@
 # Mascii 2.0 
-Welcome to the _Musical Ascii_ ("Mascii") polyphonic notation system, the fastest way to jot down tunes, harmonies, and musical sketches using any ordinary text input device like a computer keyboard or mobile phone.  
+Welcome to the _Musical Ascii_ ("Mascii") polyphonic notation system, a fast way to jot down and share tunes and musical sketches using any ordinary text input device like a computer keyboard or mobile phone.  
 
-Once notated in Mascii, a piece can then be converted to a variety of formats including standard printed sheet music, playable sound files, and many other widely used formats. 
-
-Mascii is great for emailing, embedding in web pages, or using in a wiki page, among other uses, making it ideal for sketching, jotting down, and sharing musical ideas from any computer keyboard.  Mascii prioritizes the full and easy expression of the essence of Western polyphonic music with a terse, minimalist syntax, making it particularly efficient for jotting down musical thoughts regardless of harmonic and rhythmic complexity. 
+Mascii can easily be converted to a other formats like sheet music or midi, and can easily be shared online. 
 
 
 ## Mascii 2 Examples
 
-See [mascii.org](http://mascii.org) for full examples of Mascii 2 in action.  Then see below to learn how you can use it.
+See [mascii.org](http://mascii.org) for examples, interactive documentation, and a live playground where you can try it.
+
+
+# Basics
+The most up-to-date Mascii specification is at [mascii.org/docs](https://mascii.org/docs). The website runs on the latest Mascii reference implementation from https://github.com/arikast/mascii-source 
+
+Below is the original documentation for Mascii 2.0, preserved for historical reasons.  It is still mostly accurate, but see the website for the latest spec.
 
 
 ## Pitch
@@ -569,9 +573,12 @@ But for me, several traits make Mascii the most efficient and convenient choice 
 1. formal recognition of chord symbols.  Currently you could add them to lyrics or put them in a comment, but they are not recognized as anything special, so will not be placed correctly in sheet music for example
 2. trill and ornament markings
 3. song titles
-4. a website where Mascii can be instantly converted to sheet music and sound files online for easy sharing
+4. ~~a website where Mascii can be instantly converted to sheet music and sound files online for easy sharing~~ 
+Online version of Mascii is ready!  Check it out at mascii.org
 
-### How were the sheet music and mp3s in this readme created?
+### Legacy: ~~How were the sheet music and mp3s in this readme created?~~
+Today, you can use Mascii right away at mascii.org.  But prior to that online version, this was the process:
+
 All of the sheet music and mp3 files on [mascii.org](http://mascii.org) were generated via the following process:
 1. write the musical excerpt in Mascii
 2. use the software contained in this project to convert the Mascii notation into a midi file.
@@ -580,17 +587,18 @@ All of the sheet music and mp3 files on [mascii.org](http://mascii.org) were gen
 5. export mp3 file
 6. steps 3 thru 5 can actually be automated; see the scripts in the /scripts folder for examples of how to do it
 
-This project currently supports direct conversion of plain Mascii 2 text notation into midi, a universal sound notation language for computers.  This midi file can then be imported into many other programs, such as the free and excellent MuseScore, to be viewed and printed as traditional sheet music, or output into other formats like mp3 for listening or MusicXml for import into other programs.  In future, this project or a companion website may support direct conversion from Mascii into pdf, mp3, or MusicXml, but currently only midi output is directly supported.
+This project supports direct conversion of plain Mascii 2 text notation into midi, a universal sound notation language for computers.  This midi file can then be imported into many other programs, such as the free and excellent MuseScore, to be viewed and printed as traditional sheet music, or output into other formats like mp3 for listening or MusicXml for import into other programs.  In future, this project or a companion website may support direct conversion from Mascii into pdf, mp3, or MusicXml, but currently only midi output is directly supported.
 
 
-# How to install and run Mascii 2 
+# Legacy: ~~How to install and run Mascii 2~~ 
+Today, there is no need to install anything.  You can use Mascii right away at mascii.org.  But prior to that online version, this was the process:
 
-## Easy way: Use Docker 
+## Legacy: ~~Easy way: Use Docker~~
 If you have Docker installed, the quickest/easiest way to install and run Mascii with MuseScore end-to-end is to follow the Docker instructions in [docker/README.md](docker/README.md) 
 
 Otherwise, read on for native installation/running
 
-## Harder way: Non-Docker Native installation
+## Legacy: ~~Harder way: Non-Docker Native installation~~
 These instructions are if you don't use Docker.  Otherwise you may prefer to install and use Docker for a faster/easier installation experience
 
 1. download the jar from this repo, or simply clone this entire repo
@@ -598,7 +606,7 @@ These instructions are if you don't use Docker.  Otherwise you may prefer to ins
 alias mascii='java -jar /YOUR/ACTUAL/PATH/mascii-quickstart/bin/mascii-*.jar'
 3. restart your command line shell for your alias to take effect
 
-#### Running Mascii (the non-Docker way)
+#### Legacy: ~~Running Mascii (the non-Docker way)~~
 1. make sure Mascii is installed as described above.
 2. make sure you have java 1.8+ installed on your system
 3. write your mascii piece in a text file (in this example we'll call it "your-text-file.mascii"), then use mascii like this to generate a midi file (.mid):

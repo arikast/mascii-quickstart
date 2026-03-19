@@ -574,10 +574,10 @@ But for me, several traits make Mascii the most efficient and convenient choice 
 2. trill and ornament markings
 3. song titles
 4. ~~a website where Mascii can be instantly converted to sheet music and sound files online for easy sharing~~ 
-Online version of Mascii is ready!  Check it out at mascii.org
+Online version of Mascii is ready!  Check it out at [mascii.org](http://mascii.org)
 
 ### Legacy: ~~How were the sheet music and mp3s in this readme created?~~
-Today, you can use Mascii right away at mascii.org.  But prior to that online version, this was the process:
+Today, you can use Mascii right away at [mascii.org](http://mascii.org).  But prior to that online version, this was the process:
 
 All of the sheet music and mp3 files on [mascii.org](http://mascii.org) were generated via the following process:
 1. write the musical excerpt in Mascii
@@ -591,7 +591,9 @@ This project supports direct conversion of plain Mascii 2 text notation into mid
 
 
 # Legacy: ~~How to install and run Mascii 2~~ 
-Today, there is no need to install anything.  You can use Mascii right away at mascii.org.  But prior to that online version, this was the process:
+Today, there is no need to install anything.  You can use Mascii right away at [mascii.org](http://mascii.org).  If you still want a command line tool, then you can use the [newly rewritten Mascii engine](https://github.com/arikast/mascii-source) which was ported from Java to Typescript.  The new Typescript engine is now the official engine which will receive all future development.
+
+But prior to the online version and prior to the Typescript command line tool, this was the process:
 
 ## Legacy: ~~Easy way: Use Docker~~
 If you have Docker installed, the quickest/easiest way to install and run Mascii with MuseScore end-to-end is to follow the Docker instructions in [docker/README.md](docker/README.md) 

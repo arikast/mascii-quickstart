@@ -1,4 +1,4 @@
-# Mascii 2.0 
+# Mascii 2
 Welcome to the _Musical Ascii_ ("Mascii") polyphonic notation system, a fast way to jot down and share tunes and musical sketches using any ordinary text input device like a computer keyboard or mobile phone.  
 
 Mascii can easily be converted to a other formats like sheet music or midi, and can easily be shared online. 
